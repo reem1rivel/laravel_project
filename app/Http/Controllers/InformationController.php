@@ -10,8 +10,7 @@ class InformationController extends Controller
 {
     
   public function showForm(){
-    $infos = Information::all();
-   return view('informations', compact('infos'));
+   return view('informations');
   }
 
   public function editInfo(Information $edit_info){
